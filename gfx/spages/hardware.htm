@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!-- autorefresh
+		<meta http-equiv="refresh" content="10"> -->
+		<title>Hardware</title>
+		<link rel="icon" type="image/png" href="../images/execution.png">
+		<link rel="stylesheet" type="text/css" href="../CSS/hardware.css">
+	</head>
+	<body>
+
+<button class="button button1" onclick="myFunction()">Summary</button>
+
+<script>
+function myFunction() {
+    alert("Platforms connected:\n\n - HSW\t\t\t\t\t(x2)\n - SKL\t\t\t\t\t\t\t(x2)\n - KBL\t\t\t\t\t\t\t(x2)\n - BDW\t\t\t\t\t(x2) \n - BSW\t\t\t\t\t(x2)\n - IVB\t\t\t\t\t\t\t\t(x2)\n - GLK\t\t\t\t\t\t\t(x2)\n - SNB\t\t\t\t\t\t\t(x1)\n - APL\t\t\t\t\t\t\t(x1)\n _____________________\n Total: 16 Platforms");
+}
+</script>
+
+
+		<div id="snackbar1">raspberrypi1dut1.intel.com</div>
+		<div id="snackbar2">raspberrypi1dut2.intel.com</div>
+		<div id="snackbar3">raspberrypi1dut3.intel.com</div>
+		<div id="snackbar4">raspberrypi1dut4.intel.com</div>
+		<div id="snackbar5">raspberrypi1dut5.intel.com</div>
+		<div id="snackbar6">raspberrypi1dut6.intel.com</div>
+		<div id="snackbar7">raspberrypi1dut7.intel.com</div>
+		<div id="snackbar8">raspberrypi1dut8.intel.com</div>
+		<div id="snackbar9">raspberrypi2dut1.intel.com</div>
+		<div id="snackbar10">raspberrypi2dut2.intel.com</div>
+		<div id="snackbar11">raspberrypi2dut3.intel.com</div>
+		<div id="snackbar12">raspberrypi2dut4.intel.com</div>
+		<div id="snackbar13">raspberrypi2dut5.intel.com</div>
+		<div id="snackbar14">raspberrypi2dut6.intel.com</div>
+		<div id="snackbar15">raspberrypi2dut7.intel.com</div>
+		<div id="snackbar16">raspberrypi2dut8.intel.com</div>
+
+		<table border="1" width="90%" cellpadding="10" cellspacing="2">
+			<tr>
+				<th scope="col" align="center">
+					<img src="https://maxcdn.icons8.com/Share/icon/Logos//raspberry_pi1600.png" width="30" height="30" title="Raspberry">
+					<legend>Raspberry</legend>
+				</th>
+				<th scope="col" align="center">
+					<img src="https://cdn0.iconfinder.com/data/icons/superuser-web-kit-thin/512/686896-button_switch_power_option_control_lever_on-512.png" width="30" height="30" title="Switch">
+					<legend>Switch</legend>
+				</th>
+				<th scope="col" align="center">
+					<img src="http://mejorhostingmexico.com/wp-content/uploads/2016/02/Hospedaje-web.jpg" width="30" height="30" title="Hostname">
+					<legend>Hostname</legend>
+				</th>
+				<th scope="col" align="center">
+					<img src="https://image.freepik.com/free-icon/open-laptop-computer-with-pixel-boxes_318-39349.jpg" width="30" height="30" title="Platform">
+					<legend>Platform</legend>
+				</th>
+				<th scope="col" align="center">
+					<img src="https://maxcdn.icons8.com/iOS7/PNG/512/Computer_Hardware/motherboard-512.png" width="30" height="30" title="motherboard">
+					<legend>Motherboard model</legend>
+				</th>
+				<th scope="col" align="center"> 
+					<img src="https://cdn.vectorstock.com/i/composite/84,00/cpu-icon-microprocessor-and-processor-symbol-vector-5518400.jpg" width="30" height="30" title="CPU/Generation">
+					<legend>CPU/Generation</legend>
+				</th>
+				<th scope="col" align="center"> 
+					<img src="https://cdn3.iconfinder.com/data/icons/basic-mobile-part-2/512/graphic_design-512.png" width="30" height="30" title="Graphics">
+					<legend>Graphics</legend>
+				</th>
+				<th scope="col" align="center">
+					<img src="https://cdn3.iconfinder.com/data/icons/computer-system-and-data/512/26-512.png" width="30" height="30" title="Hardrive">
+					<legend>Hardrive</legend>
+				</th>
+				<th scope="col" align="center">
+					<img src="https://cdn1.iconfinder.com/data/icons/hardware-2/24/Ram-512.png" width="30" height="30" title="Memory">
+					<legend>Memory</legend>
+				</th>
+				<th scope="col" align="center">
+					<img src="https://cdn2.iconfinder.com/data/icons/computer-icons/100/PC2_go-07-512.png" width="30" height="30" title="Bios">
+					<legend>Bios</legend>
+				</th>
+				<th scope="col" align="center">
+					<img src="https://cdn4.iconfinder.com/data/icons/proglyphs-free/512/Linux_-_Tux-512.png" width="30" height="30" title="Linux distro">
+					<legend>Linux distro</legend>
+				</th>
+				<th scope="col" align="center">
+					<img src="https://cdn4.iconfinder.com/data/icons/proglyphs-computers-and-development/512/Cinema_Display-512.png" width="30" height="30" title="Displays connected">
+					<legend>Displays connected</legend>
+				</th>
+			</tr>
+
+			<tr>
+				<th scope="row"> 1</th>
+				<td align="center"> 1</td>
+				<td align="center">
+					<button class="button button1" onclick="rasp1dut1()">HSW-2</button>
+				</td>
+				<td align="center"> Haswell-Nuc</td>
+				<td align="center"> D54250WYK</td>
+				<td align="center">
+					<a href="http://ark.intel.com/products/75028/Intel-Core-i5-4250U-Processor-3M-Cache-up-to-2_60-GHz?q=4250U" target="_blank">
+						Intel(R) Core(TM) i5-4250U CPU @ 1.30GHz
+					</a>
+				</td>
+				<td align="center"> Intel Corporation Haswell-ULT Integrated Graphics</td>
+				<td align="center"> 240GB</td>
+				<td align="center"> 8GB</td>
+				<td align="center"> 4.6 rev (07/04/2016)</td>
+				<td align="center"> Ubuntu 16.10 yakkety 64bit</td>
+				<td align="center"> DP/HDMI</td>
+			</tr>
+			<tr>
+				<th scope="row"> 1</th>
+				<td align="center"> 2</td>
+				<td align="center">
+					<button class="button button1" onclick="rasp1dut2()">SKL-2</button>
+				</td>
+				<td align="center"> Skylake-Nuc</td>
+				<td align="center"> NUC6i5SYB</td>
+				<td align="center"> 
+					<a href="http://ark.intel.com/products/91160/Intel-Core-i5-6260U-Processor-4M-Cache-up-to-2_90-GHz?q=%20i5-6260U" target="_blank">
+						Intel(R) Core(TM) i5-6260U CPU @ 1.80GHz
+					</a>
+				</td>
+				<td align="center"> Intel Corporation Iris Graphics 540</td>
+				<td align="center"> 240GB</td>
+				<td align="center"> 16GB</td>
+				<td align="center"> 5.6 rev (05/27/2016)</td>
+				<td align="center"> Ubuntu 16.10 yakkety 64bit</td>
+				<td align="center"> DP/HDMI</td>
+			</tr>
+			<tr>
+				<th scope="row"> 1</th>
+				<td align="center"> 3</td>
+				<td align="center"> 
+					<button class="button button1" onclick="rasp1dut3()">KBL-2</button>
+				</td>
+				<td align="center"> Kabylake-Nuc</td>
+				<td align="center"> MS-B142</td>
+				<td align="center"> 
+					<a href="http://ark.intel.com/products/95451/Intel-Core-i7-7500U-Processor-4M-Cache-up-to-3_50-GHz-" target="_blank">
+						Intel(R) Core(TM) i7-7500U CPU @ 2.70GHz
+					</a>
+				</td>
+				<td align="center"> Intel Corporation Device 5916 (rev 02)</td>
+				<td align="center"> 120GB</td>
+				<td align="center"> 8GB</td>
+				<td align="center"> 5.12 rev (09/12/2016)</td>
+				<td align="center"> Ubuntu 16.10 yakkety 64bit</td>
+				<td align="center"> DP/HDMI</td>
+			</tr>
+			<tr>
+				<th scope="row"> 1</th>
+				<td align="center"> 4</td>
+				<td align="center">
+					<button class="button button1" onclick="rasp1dut4()">BDW-2</button>
+				</td>
+				<td align="center"> Broadwell-Nuc</td>
+				<td align="center"> NUC5i7RYB</td>
+				<td align="center">
+					<a href="http://ark.intel.com/products/84993/Intel-Core-i7-5557U-Processor-4M-Cache-up-to-3_40-GHz?q=i7-5557U" target="_blank">
+						Intel(R) Core(TM) i7-5557U CPU @ 3.10GHz
+					</a>
+				</td>
+				<td align="center"> Intel Corporation Iris Graphics 6100</td>
+				<td align="center"> 480GB</td>
+				<td align="center"> 16GB</td>
+				<td align="center"> 5.6 rev (05/29/2015)</td>
+				<td align="center"> Ubuntu 16.10 yakkety 64bit</td>
+				<td align="center"> DP/HDMI</td>
+				
+			</tr>
+			<tr>
+				<th scope="row"> 1</th>
+				<td align="center"> 5</td>
+				<td align="center">
+					<button class="button button1" onclick="rasp1dut5()">BSW-2</button>
+				</td>
+				<td align="center"> Braswell-Desktop</td>
+				<td align="center"> 10G9000NUS</td>
+				<td align="center">
+					<a href="http://ark.intel.com/products/87261/Intel-Pentium-Processor-N3700-2M-Cache-up-to-2_40-GHz?q=N3700" target="_blank">
+						Intel(R) Pentium(R) CPU  N3700  @ 1.60GHz
+					</a>
+				</td>
+				<td align="center"> Intel Corporation Atom Processor x5-E8000</td>
+				<td align="center"> 512GB</td>
+				<td align="center"> 8GB</td>
+				<td align="center"> 0.33 rev (08/12/2015)</td>
+				<td align="center"> Ubuntu 16.10 yakkety 64bit</td>
+				<td align="center"> DP/DP</td>
+
+			</tr>
+			<tr>
+				<th scope="row"> 1</th>
+				<td align="center"> 6</td>
+				<td align="center">
+					<button class="button button1" onclick="rasp1dut6()">IVB-2</button>
+				</td>
+				<td align="center"> IVY-Bridge</td>
+				<td align="center"> HPEliteBookRevolve810G1</td>
+				<td align="center">
+					<a href="http://ark.intel.com/products/71259/Intel-Core-i5-3437U-Processor-3M-Cache-up-to-2_90-GHz?q=i5-3437U" target="_blank">
+						Intel(R) Core(TM) i5-3437U CPU @ 1.90GHz
+					</a>
+				</td>
+				<td align="center"> Intel Corporation 3rd Gen Core processor</td>
+				<td align="center"> 128GB</td>
+				<td align="center"> 16GB</td>
+				<td align="center"> 15.72 rev (02/10/2014)</td>
+				<td align="center"> Ubuntu 16.10 yakkety 64bit</td>
+				<td align="center"> LVDS/DP</td>
+			</tr>
+			<tr>
+				<th scope="row"> 1</th>
+				<td align="center"> 7</td>
+				<td align="center">
+					<button class="button button1" onclick="rasp1dut7()">GLK-2</button>
+				</td>
+				<td align="center"> Gemini-Lake</td>
+				<td align="center"> Geminilake</td>
+				<td align="center"> Genuine Intel(R) CPU @ 1.10GHz</td>
+				<td align="center"> Intel Corporation Device 3184 (rev 01)</td>
+				<td align="center"> 80GB</td>
+				<td align="center"> 8GB</td>
+				<td align="center"> 32.30 rev (01/24/2017)</td>
+				<td align="center"> Ubuntu 16.10 yakkety 64bit</td>
+				<td align="center"> eDP/DP/HDMI</td>
+			</tr>
+			<tr>
+				<th scope="row"> 1</th>
+				<td align="center"> 8</td>
+				<td align="center">
+					<button class="button button1" onclick="rasp1dut8()">SNB-1</button>
+				</td>
+				<td align="center"> Sandy-Bridge</td>
+				<td align="center"> OptiPlex990 06D7TR</td>
+				<td align="center">
+					<a href="http://ark.intel.com/products/52213/Intel-Core-i7-2600-Processor-8M-Cache-up-to-3_80-GHz" target="_blank">
+						Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz
+					</a>
+				</td>
+				<td align="center"> Intel Corporation 2nd Generation Core Processor</td>
+				<td align="center"> 120GB</td>
+				<td align="center"> 8GB</td>
+				<td align="center"> 4.6 rev (08/26/2015)</td>
+				<td align="center"> Ubuntu 16.10 yakkety 64bit</td>
+				<td align="center"> VGA/DP</td>
+			</tr>
+
+			<!-- Raspberry 2 -->
+
+			<tr>
+				<th scope="row"> 2</th>
+				<td align="center"> 1</td>
+				<td align="center"> 
+					<button class="button button1" onclick="rasp2dut1()">BSW-1</button>
+				</td>
+				<td align="center"> Braswell-Desktop</td>
+				<td align="center"> 10G9000NUS</td>
+				<td align="center">
+					<a href=http://ark.intel.com/products/87261/Intel-Pentium-Processor-N3700-2M-Cache-up-to-2_40-GHz" target="_blank">
+						Intel(R) Pentium(R) CPU  N3700  @ 1.60GHz
+					</a>
+				</td>
+				<td align="center"> Intel Corporation Atom Processor x5-E8000</td>
+				<td align="center"> 240GB</td>
+				<td align="center"> 8GB</td>
+				<td align="center"> 0.33 rev (08/12/2015)</td>
+				<td align="center"> Ubuntu 16.10 yakkety 64bit</td>
+				<td align="center"> DP/DP</td>
+			</tr>
+			<tr>
+				<th scope="row"> 2</th>
+				<td align="center"> 2</td>
+				<td align="center">
+					<button class="button button1" onclick="rasp2dut2()">KBL-1</button>
+				</td>
+				<td align="center"> KabyLake-Nuc</td>
+				<td align="center"> MS-B142</td>
+				<td align="center">
+					<a href="http://ark.intel.com/products/95451/Intel-Core-i7-7500U-Processor-4M-Cache-up-to-3_50-GHz-?q=i7-7500U" target="_blank">
+						Intel(R) Core(TM) i7-7500U CPU @ 2.70GHz
+					</a>
+				</td>
+				<td align="center"> Intel Corporation Device 5916 (rev 02)</td>
+				<td align="center"> 120GB</td>
+				<td align="center"> 16GB</td>
+				<td align="center"> 5.12 rev (09/12/2016)</td>
+				<td align="center"> Ubuntu 16.10 yakkety 64bit</td>
+				<td align="center"> DP/HDMI</td>
+			</tr>
+			<tr>
+				<th scope="row"> 2</th>
+				<td align="center"> 3</td>
+				<td align="center">
+					<button class="button button1" onclick="rasp2dut3()">SKL-1</button>
+				</td>
+				<td align="center"> Skylake-Nuc</td>
+				<td align="center"> NUC6i5SYB</td>
+				<td align="center">
+					<a href="http://ark.intel.com/products/91160/Intel-Core-i5-6260U-Processor-4M-Cache-up-to-2_90-GHz?q=i5-6260U" target="_blank">
+						Intel(R) Core(TM) i5-6260U CPU @ 1.80GHz
+					</a>
+				</td>
+				<td align="center"> Intel Corporation Iris Graphics 540</td>
+				<td align="center"> 360GB</td>
+				<td align="center"> 16GB</td>
+				<td align="center"> 5.6 rev (09/10/2016)</td>
+				<td align="center"> Ubuntu 16.10 yakkety 64bit</td>
+				<td align="center"> DP/HDMI</td>
+			</tr>
+			<tr>
+				<th scope="row"> 2</th>
+				<td align="center"> 4</td>
+				<td align="center">
+					<button class="button button1" onclick="rasp2dut4()">BXT-1</button>
+				</td>
+				<td align="center"> Broxton-P</td>
+				<td align="center"> Notebook</td>
+				<td align="center"> Intel Corporation 06/5c</td>
+				<td align="center"> Intel Corporation Atom/Celeron/Pentium Processor N4200/N3350/E3900</td>
+				<td align="center"> 120GB</td>
+				<td align="center"> 8GB</td>
+				<td align="center"> 144.10 rev (06/27/2016)</td>
+				<td align="center"> Ubuntu 16.10 yakkety 64bit</td>
+				<td align="center"> eDP/DP/HDMI</td>
+			</tr>
+			<tr>
+				<th scope="row"> 2</th>
+				<td align="center"> 5</td>
+				<td align="center">
+					<button class="button button1" onclick="rasp2dut5()">HSW-1</button>
+				</td>
+				<td align="center"> Haswell-Nuc</td>
+				<td align="center"> D54250WYK</td>
+				<td align="center">
+					<a href="http://ark.intel.com/products/75028/Intel-Core-i5-4250U-Processor-3M-Cache-up-to-2_60-GHz?q=4250U" target="_blank">
+						Intel(R) Core(TM) i5-4250U CPU @ 1.30GHz
+					</a>
+				</td>
+				<td align="center"> Intel Corporation Haswell-ULT Integrated Graphics</td>
+				<td align="center"> 240GB</td>
+				<td align="center"> 8GB</td>
+				<td align="center"> 4.6 rev (07/04/2016)</td>
+				<td align="center"> Ubuntu 16.10 yakkety 64bit</td>
+				<td align="center"> DP/HDMI</td>
+			</tr>
+			<tr>
+				<th scope="row"> 2</th>
+				<td align="center"> 6</td>
+				<td align="center">
+					<button class="button button1" onclick="rasp2dut6()">IVB-1</button>
+				</td>
+				<td align="center"> IVY-Bridge</td>
+				<td align="center"> Inspiron 660 0XR1GT</td>
+				<td align="center">
+					<a href="http://ark.intel.com/products/65509/Intel-Core-i5-3330-Processor-6M-Cache-up-to-3_20-GHz" target="_blank">
+						Intel(R) Core(TM) i5-3330 CPU @ 3.00GHz
+					</a>
+				</td>
+				<td align="center"> Intel Corporation Xeon E3-1200 v2/3rd Gen Core processor</td>
+				<td align="center"> 80GB</td>
+				<td align="center"> 8GB</td>
+				<td align="center"> 4.6 rev (10/14/2013)</td>
+				<td align="center"> Ubuntu 16.10 yakkety 64bit</td>
+				<td align="center"> VGA/HDMI</td>
+			</tr>
+			<tr>
+				<th scope="row"> 2</th>
+				<td align="center"> 7</td>
+				<td align="center">
+					<button class="button button1" onclick="rasp2dut7()">BDW-1</button>
+				</td>
+				<td align="center"> Broadwell-Nuc</td>
+				<td align="center"> NUC5i5RYB</td>
+				<td align="center">
+					<a href="http://ark.intel.com/products/84984/Intel-Core-i5-5250U-Processor-3M-Cache-up-to-2_70-GHz?q=i5-5250U" target="_blank">
+						Intel(R) Core(TM) i5-5250U CPU @ 1.60GHz
+					</a>	
+				</td>
+				<td align="center"> Intel Corporation HD Graphics 6000</td>
+				<td align="center"> 80GB</td>
+				<td align="center"> 8GB</td>
+				<td align="center"> 5.6 rev (09/06/2016)</td>
+				<td align="center"> Ubuntu 16.10 yakkety 64bit</td>
+				<td align="center"> DP/HDMI</td>
+			</tr>
+			<tr>
+				<th scope="row"> 2</th>
+				<td align="center"> 8</td>
+				<td align="center">
+					<button class="button button1" onclick="rasp2dut8()">GLK-1</button>
+				</td>
+				<td align="center"> Gemini-Lake</td>
+				<td align="center"> GeminiLake</td>
+				<td align="center"> Genuine Intel(R) CPU @ 1.10GHz</td>
+				<td align="center"> Intel Corporation Device 3184 (rev 01)</td>
+				<td align="center"> 240GB</td>
+				<td align="center"> 8B</td>
+				<td align="center"> 32.30 rev (01/24/2017)</td>
+				<td align="center"> Ubuntu 16.10 yakkety 64bit</td>
+				<td align="center"> eDP/DP/HDMI</td>
+			</tr>
+
+		</table>
+
+
+<script>
+	function rasp1dut1() {
+	    var x = document.getElementById("snackbar1")
+	    x.className = "show";
+	    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
+	}
+
+	function rasp1dut2() {
+	    var x = document.getElementById("snackbar2")
+	    x.className = "show";
+	    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
+	}
+
+	function rasp1dut3() {
+	    var x = document.getElementById("snackbar3")
+	    x.className = "show";
+	    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
+	}
+
+	function rasp1dut4() {
+	    var x = document.getElementById("snackbar4")
+	    x.className = "show";
+	    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
+	}
+
+	function rasp1dut5() {
+	    var x = document.getElementById("snackbar5")
+	    x.className = "show";
+	    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
+	}
+
+	function rasp1dut6() {
+	    var x = document.getElementById("snackbar6")
+	    x.className = "show";
+	    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
+	}
+
+	function rasp1dut7() {
+	    var x = document.getElementById("snackbar7")
+	    x.className = "show";
+	    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
+	}
+
+	function rasp1dut8() {
+	    var x = document.getElementById("snackbar8")
+	    x.className = "show";
+	    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
+	}
+
+	function rasp2dut1() {
+	    var x = document.getElementById("snackbar9")
+	    x.className = "show";
+	    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
+	}
+
+	function rasp2dut2() {
+	    var x = document.getElementById("snackbar10")
+	    x.className = "show";
+	    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
+	}
+
+	function rasp2dut3() {
+	    var x = document.getElementById("snackbar11")
+	    x.className = "show";
+	    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
+	}
+
+	function rasp2dut4() {
+	    var x = document.getElementById("snackbar12")
+	    x.className = "show";
+	    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
+	}
+
+	function rasp2dut5() {
+	    var x = document.getElementById("snackbar13")
+	    x.className = "show";
+	    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
+	}
+
+	function rasp2dut6() {
+	    var x = document.getElementById("snackbar14")
+	    x.className = "show";
+	    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
+	}
+
+	function rasp2dut7() {
+	    var x = document.getElementById("snackbar15")
+	    x.className = "show";
+	    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
+	}
+
+	function rasp2dut8() {
+	    var x = document.getElementById("snackbar16")
+	    x.className = "show";
+	    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
+	}
+
+</script>
+
+	</body>
+</html>

@@ -1,0 +1,326 @@
+	<!DOCTYPE HTML>
+<html lang="en">
+	<head><title>LinuxGraphics</title>
+		<link rel="icon" type="image/png" href="images/tux.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="CSS/main.css">
+	</head>
+	<body>
+		<!-- Navigation bar-->
+		<nav id="primary_nav_wrap">
+		<ul class="w3-ul">
+		  <li class="current-menu-item w3-xlarge"><a href="http://linuxgraphics.intel.com"><i class="fa fa-home"></i> Home</a></li>
+		  <li><a href="https://01.org/linuxgraphics/intel-linux-graphics-firmwares" target="_blank"><i class="fa fa-bars"></i> Firmwares</a></li>
+		  <li><a href="https://01.org/linuxgraphics/downloads" target="_blank"><i class="fa fa-bars"></i> Published downloads</a></li>
+		  <li><a href="#"><i class="fa fa-bars"></i> Bugs & debugging</a>
+		  	<ul>
+		  		<li><a href="https://01.org/linuxgraphics/documentation/bugs-and-debugging/learn-more-about-gfx-bug-handling" target="_blank"> Learn more about GFX bug handling</a></li>
+		  		<li><a href="https://01.org/linuxgraphics/documentation/bugs-and-debugging/tips-may-help-solve-your-issue-less-time" target="_blank"> Tips that may help to solve your issue in less time</a></li>
+		  		<li><a href="https://01.org/linuxgraphics/documentation/how-report-bugs" target="_blank"> How to report bugs</a></li>
+		  		<li><a href="https://01.org/linuxgraphics/documentation/bugs-and-debugging/how-get-kernel-backtrace" target="_blank"> How to get kernel backtrace</a></li>
+		  		<li><a href="https://01.org/linuxgraphics/documentation/how-get-gpu-error-state"target="_blank"> How to get GPU error state</a></li>
+		  		<li><a href="https://01.org/linuxgraphics/documentation/development/how-dump-video-bios" target="_blank"> How to dump Video BIOS</a></li>
+		  		<li><a href="https://01.org/linuxgraphics/documentation/development/how-debug-suspend-resume-issues" target="_blank"> How to debug suspend-resume issues</a></li>
+		  	</ul>
+		  </li>
+		  <li><a href="#"><i class="fa fa-bars"></i> Ubuntu Tips</a>
+		  	<ul>
+		  		<li><a href="https://help.ubuntu.com/community/InstallingANewHardDrive" target="_blank"> Installing a new hardrive</a></li>
+				<li><a href="http://leranda.com/2012/06/format-disk-with-parted-shell/" target="_blank"> Formating a disk with parted</a></li>
+		  		<li><a href="https://www.comodo.com/resources/small-business/digital-certificates2.php" target="_blank"> Public key and private keys</a></li>
+		  		<li><a href="https://www.linux.com/blog/simple-kexec-example" target="_blank"> Simple Kexec example</a></li>
+		  		<li><a href="https://wiki.archlinux.org/index.php/kexec" target="_blank"> Kexec (archlinux)</a></li>
+		  		<li><a href="http://www.tecmint.com/add-users-in-linux/"target="_blank"> adduser guide</a></li>
+		  		<li><a href="https://www.cyberciti.biz/faq/howto-linux-add-user-to-group/" target="_blank"> Add user to group</a></li>
+		  	</ul>
+		  </li>
+
+		  <li><a href="#"><i class="fa fa-bars"></i> intel-gpu-tools</a>
+		  	<ul>
+		  		<li><a href="https://01.org/linuxgraphics/gfx-docs/igt/" target="_blank"> Reference Manual</a></li>
+		  		<li><a href="https://cgit.freedesktop.org/xorg/app/intel-gpu-tools/" target="_blank"> Repository from cgit</a></li>
+		  	</ul>
+		  </li>
+
+		  <li><a href="#"><i class="fa fa-bars"></i> Git topics</a>
+		  	<ul>
+		  		<li><a href="https://help.ubuntu.com/community/InstallingANewHardDrive" target="_blank"> Cherry-Picking specific commits from another branch</a></li>
+		  		<li><a href="https://git-scm.com/book/ch3-6.html" target="_blank"> Git Branching - Rebasing</a></li>
+		  		<li><a href="https://git-scm.com/docs/git-bisect" target="_blank"> Git Bisect</a></li>
+		  	</ul>
+		  </li>
+		  <li><a href="https://01.org/linuxgraphics/documentation/faq" target="_blank"><i class="fa fa-bars"></i> FAQ</a></li>
+		  <li><a href="https://01.org/linuxgraphics/about" target="_blank"><i class="fa fa-bars"></i> About us</a></li>
+		</ul>
+		</nav>
+			<!--Search bar-->
+			<form><input type="text" name="search" placeholder=" Search ..." align="right"></form>
+
+			<!-- main Image -->
+			<div class="blur pic">
+				<center><img src="images/LinuxGraphics.jpg" class="w3-hover-grayscale" width="100%" height="100%"></center>
+			</div>
+
+			<!-- Animation balls-->
+			<div class="bubblingG">
+				<span id="bubblingG_1"></span>
+				<span id="bubblingG_2"></span>
+				<span id="bubblingG_3"></span>
+			</div>
+		<span onclick="openNav()"><button class="accordion"><img src="images/debian_1.png" width="20" height="20"> Debian packages</button></span>
+			<div id="myNav" class="overlay">
+			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			  <div class="overlay-content">
+			    <a href="http://linuxgraphics.intel.com/deb" target="_blank">graphic stack</a>
+			    <a href="http://linuxgraphics.intel.com/drm-intel-qa" target="_blank">drm-intel-qa</a>
+			    <a href="http://linuxgraphics.intel.com/drm-tip" target="_blank">drm-tip</a>
+				<a href="http://linuxgraphics.intel.com/kernels/drm-intel-testing" target="_blank">drm-intel-testing</a>
+			    <a href="http://linuxgraphics.intel.com/mainline" target="_blank">mainline</a>
+			  </div>
+			</div>
+
+		<span onclick="openNav9()"><button class="accordion"><img src="images/educational.png" width="20" height="20"> Educational sessions</button></span>
+			<div id="myNav9" class="overlay">
+			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav9()">&times;</a>
+			  <div class="overlay-content">
+			    <a href="http://linuxgraphics.intel.com/educational" target="_blank">video clips</a>
+			  </div>
+			</div>
+
+		<span onclick="openNav7()"><button class="accordion"><img src="images/jira.jpg" width="20" height="20"> Jira</button></span>
+			<div id="myNav7" class="overlay">
+			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav7()">&times;</a>
+			  <div class="overlay-content">
+			    <a href="https://jira01.devtools.intel.com/secure/RapidBoard.jspa?rapidView=9597" target="_blank">Automation KanBan</a>
+			    <a href="https://jira01.devtools.intel.com/secure/RapidBoard.jspa?rapidView=7108" target="_blank">GDC QA KanBan</a>
+			  	<a href="https://jira01.devtools.intel.com/secure/RapidBoard.jspa?rapidView=9689&view=planning.nodetail&selectedIssue=VIZ-12936" target="_blank">Automation Team Backlog</a>
+			  </div>
+			</div>
+
+		<span onclick="openNav8()"><button class="accordion"><img src="images/automation.png" width="20" height="20"> Automation Team</button></span>
+			<div id="myNav8" class="overlay">
+			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav8()">&times;</a>
+			  <div class="overlay-content">
+			    <a href="https://asgard.intel.com/gerrit" target="_blank">Gerrit in asgard.intel.com</a>
+			    <a href="https://asgard.intel.com/jenkins" target="_blank">Jenkis in asgard.intel.com</a>
+			    <a href="https://github.intel.com/linuxgraphics" target="_blank">Repositories in github.intel.com</a>
+			  </div>
+			</div>
+
+		<span onclick="openNav5()"><button class="accordion"><img src="images/benchmarks.png" width="20" height="20"> Benchmarks</button></span>
+			<div id="myNav5" class="overlay">
+			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav5()">&times;</a>
+			  <div class="overlay-content">
+			  	<a href="http://linuxgraphics.intel.com/benchmarks/" target="_blank">benchmarks</a>
+			  	<!-- Navigation bar
+			    <a href="http://linuxgraphics.intel.com/benchmarks/GpuTest.tar.gz" target="_blank">GpuTest.tar.gz</a>
+			   	<a href="http://linuxgraphics.intel.com/benchmarks/GpuTest07.tar.gz" target="_blank">GpuTest07.tar.gz</a>
+			    <a href="http://linuxgraphics.intel.com/benchmarks/SynMark2-7.0.tar.gz" target="_blank">SynMark2-7.0.tar.gz</a>
+				<a href="http://linuxgraphics.intel.com/benchmarks/SynMark2.tar.gz" target="_blank">SynMark2.tar.gz</a>
+				<a href="http://linuxgraphics.intel.com/benchmarks/VulkanDemos_SachaWillems.tar.gz" target="_blank">VulkanDemos_SachaWillems.tar.gz</a>
+				<a href="http://linuxgraphics.intel.com/benchmarks/apitraces.tar.gz" target="_blank">apitraces.tar.gz</a>
+				<a href="http://linuxgraphics.intel.com/benchmarks/cpumembw.tar.gz" target="_blank">cpumembw.tar.gz</a>
+				<a href="http://linuxgraphics.intel.com/benchmarks/cts-es.tar.gz" target="_blank">cts-es.tar.gz</a>
+				<a href="http://linuxgraphics.intel.com/benchmarks/cts-gl.tar.gz" target="_blank">cts-gl.tar.gz</a>
+				<a href="http://linuxgraphics.intel.com/benchmarks/draw-elements.tar.gz" target="_blank">draw-elements.tar.gz</a>
+				<a href="http://linuxgraphics.intel.com/benchmarks/gfxbench3_desktop.tar.gz" target="_blank">gfxbench3_desktop.tar.gz</a>
+				<a href="http://linuxgraphics.intel.com/benchmarks/gfxbench_gl-4.0.0.tar.gz" target="_blank">gfxbench_gl-4.0.0.tar.gz</a>
+				<a href="http://linuxgraphics.intel.com/benchmarks/glbenchmark2.7.0.tar.gz" target="_blank">glbenchmark2.7.0.tar.gz</a>
+				<a href="http://linuxgraphics.intel.com/benchmarks/lightsmark-1.2.0.tar.gz" target="_blank">lightsmark-1.2.0.tar.gz</a>
+				<a href="http://linuxgraphics.intel.com/benchmarks/membwtester.tar.gz" target="_blank">membwtester.tar.gz</a>
+				<a href="http://linuxgraphics.intel.com/benchmarks/textester.tar.gz" target="_blank">textester.tar.gz</a>
+				<a href="http://linuxgraphics.intel.com/benchmarks/unigine-heaven-4.0.tar.gz" target="_blank">unigine-heaven-4.0.tar.gz</a>
+				<a href="http://linuxgraphics.intel.com/benchmarks/unigine-sanctuary-1.5.1.tar.gz" target="_blank">unigine-sanctuary-1.5.1.tar.gz</a>
+				<a href="http://linuxgraphics.intel.com/benchmarks/unigine-tropics-1.5.2.tar.gz" target="_blank">unigine-tropics-1.5.2.tar.gz</a>
+				<a href="http://linuxgraphics.intel.com/benchmarks/unigine-valley-1.0.tar.gz" target="_blank">unigine-valley-1.0.tar.gz</a>
+				-->
+			  </div>
+			</div>
+
+
+		<span onclick="openNav1()"><button class="accordion"><img src="images/iso.png" width="20" height="20"> Linux Isos</button></span>
+			<div id="myNav1" class="overlay">
+			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+			  <div class="overlay-content">
+			    <a href="http://linuxgraphics.intel.com/isos/clonezilla" target="_blank">Clonezilla</a>
+			    <a href="http://linuxgraphics.intel.com/isos/fedora" target="_blank">Fedora</a>
+			    <a href="http://linuxgraphics.intel.com/isos/ubuntu" target="_blank">Ubuntu</a>
+			    <a href="http://linuxgraphics.intel.com/isos/mint" target="_blank">Mint</a>
+			    <a href="http://linuxgraphics.intel.com/isos/raspian" target="_blank">Raspian</a>
+			  </div>
+			</div>
+
+		<button class="accordion"><img src="images/reports.jpg" width="20" height="20"> Reports and Tools </button>
+			<div class="panel">
+				<img src="images/reports.jpg" width="30" height="30"><a href="https://otcqarpt.jf.intel.com/gfx/platforms/filter" target="_blank"> Reports on TestReportCenter</a><br>
+				<img src="images/reports.jpg" width="30" height="30"><a href="http://linuxgraphics.intel.com/igt-reports" target="_blank"> Reports on linuxgraphics.intel.com</a><br>
+				<img src="images/reports.jpg" width="30" height="30"><a href="http://linuxgraphics.intel.com/vis/igt_all" target="_blank"> igt_all visualization</a><br>
+				<img src="images/reports.jpg" width="30" height="30"><a href="http://linuxgraphics.intel.com/vis/igt_fast_feedback" target="_blank"> igt_fast_feedback visualization</a><br>
+			</div>
+
+		<button class="accordion"><img src="images/github.png" width="20" height="20"> Gitlist</button>
+			<div class="panel">
+				<img src="images/tag.png" width="30" height="30"><a href="http://bifrost.intel.com/gitlist/drm-tip" target="_blank"> QA Tag on bifrost.intel.com</a><br>
+			 	<img src="images/github.png" width="30" height="30"><a href="http://bifrost.intel.com/gitlist" target="_blank"> Gitlist on bifrost.intel.com</a><br>
+			 	<img src="images/github.png" width="30" height="30"><a href="https://github.com/IntelGraphics/dev" target="_blank"> Gitlist on github.com</a><br>
+			</div>
+
+		<span onclick="openNav2()"><button class="accordion"><img src="images/execution.png" width="20" height="20"> Execution manager</button></span>
+			<div id="myNav2" class="overlay">
+			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+			  <div class="overlay-content">
+			    <a href="http://bifrost.intel.com:2020/IEM" target="_blank"> IGT Execution Manager</a>
+			    <a href="http://bifrost.intel.com:2020/watchdog" target="_blank"> Watchdog</a>
+			  </div>
+			</div>
+
+		<span onclick="openNav3()"><button class="accordion"><img src="images/specs.png" width="20" height="20"> Platform specs</button></span>
+			<div id="myNav3" class="overlay">
+			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav3()">&times;</a>
+			  <div class="overlay-content">
+			    <a href="http://linuxgraphics.intel.com/platformSpecs/" target="_blank"> Specs</a>
+			    <a href="hardware.htm" target="_blank"> Hardware attached to automated system</a>
+			  </div>
+			</div>
+
+
+		<button class="accordion"><img src="images/arrow_right.png" width="20" height="20"> Bios</button>
+			<div id="foo" class="panel">
+			  	<img src="images/bios.jpg" width="30" height="30"><a href="http://linuxgraphics.intel.com/bios/BXT" target="_blank"> For Apollo</a><br>
+			  	<img src="images/bios.jpg" width="30" height="30"><a href="http://linuxgraphics.intel.com/bios/SKL_KBL" target="_blank"> For SKL/KBL</a><br>
+			  	<img src="images/bios.jpg" width="30" height="30"><a href="http://linuxgraphics.intel.com/bios/GLK" target="_blank"> For GLK</a><br>
+			</div>
+
+		<button class="accordion"><img src="images/tool.png" width="20" height="20"> Common tools</button>
+			<div id="foo" class="panel">
+			  	<img src="images/tool.png" width="30" height="30"><a href="http://linuxgraphics.intel.com/bios/CommonTools/BMP_2.67PV_External" target="_blank"> BMP</a><br>
+			  	<img src="images/tool.png" width="30" height="30"><a href="http://linuxgraphics.intel.com/bios/CommonTools/Dediprog" target="_blank"> Dediprog</a><br>
+			</div>
+
+		<button class="accordion"><img src="images/arrow_right.png" width="20" height="20"> Miscellaneous</button>
+			<div id="foo" class="panel">
+			  	<img src="images/movie.png" width="30" height="30"><a href="http://linuxgraphics.intel.com/stuff/movies" target="_blank"> Clips</a><br>
+			  	<img src="images/games.png" width="30" height="30"><a href="http://linuxgraphics.intel.com/stuff/3DGames" target="_blank">
+			  	3DGames</a><br>
+			  	<img src="images/tool.png" width="30" height="30"><a href="http://linuxgraphics.intel.com/stuff/EFI%20Shell%20USB" target="_blank"> EFI Shell by USB</a><br>
+			  	<img src="images/tool.png" width="30" height="30"><a href="http://linuxgraphics.intel.com/stuff/Format%20USB%20write%20protected%20on%20windows" target="_blank"> Format USB write protected (tool for windows)</a><br>
+			  	<img src="images/wallpaper.jpg" width="30" height="30"><a href="http://linuxgraphics.intel.com/stuff/wallpapers" target="_blank"> Wallpapers</a><br>
+			</div>
+
+		<span onclick="openNav6()"><button class="accordion"><img src="images/fi.png" width="20" height="20"> FI</button></span>
+			<div id="myNav6" class="overlay">
+			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav6()">&times;</a>
+			  <div class="overlay-content">
+			    <a href="https://intel-gfx-ci.01.org/CI " target="_blank"> IGT visualization (Public)</a>
+			    <a href="http://benchsrv.fi.intel.com/archive/results/CI_IGT_test" target="_blank"> IGT visualization (Internal)</a>
+			    <a href="http://benchsrv.fi.intel.com/cibuglog/intel-gpu-tools/tests/intel-ci" target="_blank"> Known issues</a>
+			    <a href="http://intel-gfx-ci.fi.intel.com/archive/results/CI_IGT_test" target="_blank"> CI results</a>
+			    <a href="http://benchsrv.fi.intel.com/archive/deploy" target="_blank"> FI kernels</a>
+			  </div>
+			</div>
+
+		<span onclick="openNav4()"><button class="accordion"><img src="images/arrow_blue.png" width="20" height="20"> Shortcuts</button></span>
+			<div id="myNav4" class="overlay">
+			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav4()">&times;</a>
+			  <div class="overlay-content">
+			    <a href="https://wiki.ith.intel.com/display/OTCGFX/GFX+QA+Resources#GFXQAResources-RolesandResponsibilities" target="_blank"> Gfx QA Roles and Responsabilities</a>
+			    <a href="https://wiki.ith.intel.com/display/OTCGFX/Test+Planning" target="_blank"> Test Planning</a>
+			    <a href="https://bugs.freedesktop.org" target="_blank"> Bugzilla</a>
+			    <a href="https://wiki.ith.intel.com/display/OTCGFX/Platform+BKCs" target="_blank"> Platform BKCs</a>
+			    <a href="http://ark.intel.com/" target="_blank"> Intel Product Specifications</a>
+			  </div>
+			</div>
+
+
+		<!-- JS for accordion-->
+		<script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+		    acc[i].onclick = function(){
+		        this.classList.toggle("active");
+		        this.nextElementSibling.classList.toggle("show");
+		  }
+		}
+		</script>
+
+		<!-- JS for full screen overlay effect-->
+		<script>
+		function openNav() {
+		    document.getElementById("myNav").style.height = "100%";
+		}
+		function openNav1() {
+		    document.getElementById("myNav1").style.height = "100%";
+		}
+
+		function openNav2() {
+		    document.getElementById("myNav2").style.height = "100%";
+		}
+
+		function openNav3() {
+		    document.getElementById("myNav3").style.height = "100%";
+		}
+
+		function openNav4() {
+		    document.getElementById("myNav4").style.height = "100%";
+		}
+		function openNav5() {
+		    document.getElementById("myNav5").style.height = "100%";
+		}
+
+		function openNav6() {
+		    document.getElementById("myNav6").style.height = "100%";
+		}
+
+		function openNav7() {
+		    document.getElementById("myNav7").style.height = "100%";
+		}
+
+		function openNav8() {
+		    document.getElementById("myNav8").style.height = "100%";
+		}
+		function openNav9() {
+		    document.getElementById("myNav9").style.height = "100%";
+		}
+
+
+		function closeNav() {
+		    document.getElementById("myNav").style.height = "0%";
+		}
+
+		function closeNav1() {
+		    document.getElementById("myNav1").style.height = "0%";
+		}
+
+		function closeNav2() {
+		    document.getElementById("myNav2").style.height = "0%";
+		}
+
+		function closeNav3() {
+		    document.getElementById("myNav3").style.height = "0%";
+		}
+
+		function closeNav4() {
+		    document.getElementById("myNav4").style.height = "0%";
+		}
+		function closeNav5() {
+		    document.getElementById("myNav5").style.height = "0%";
+		}
+		function closeNav6() {
+		    document.getElementById("myNav6").style.height = "0%";
+		}
+		function closeNav7() {
+		    document.getElementById("myNav7").style.height = "0%";
+		}
+		function closeNav8() {
+		    document.getElementById("myNav8").style.height = "0%";
+		}
+		function closeNav9() {
+		    document.getElementById("myNav9").style.height = "0%";
+		}
+		</script>
+	</body>
+</html>
